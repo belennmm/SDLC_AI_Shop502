@@ -1,0 +1,32 @@
+{
+  "name": "sdlc_ai_shop502",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+  "start": "node src/index.js",
+  "test": "vitest run --passWithNoTests",
+  "test:watch": "vitest",
+  "coverage": "vitest run --coverage --passWithNoTests"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belennmm/SDLC_AI_Shop502.git"
+  },
+  "keywords": [],
+  "author": "",
+  
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belennmm/SDLC_AI_Shop502/issues"
+  },
+  "homepage": "https://github.com/belennmm/SDLC_AI_Shop502#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.10",
+    "vitest": "^4.1.10"
+  }
+}
