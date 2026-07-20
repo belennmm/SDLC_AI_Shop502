@@ -1,26 +1,25 @@
 {
   "name": "sdlc_ai_shop502",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Proof of concept for an anonymous Shop 502 shopping cart TUI",
+  "main": "src/index.js",
   "type": "module",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-  "start": "node src/index.js",
-  "test": "vitest run --passWithNoTests",
-  "test:watch": "vitest",
-  "coverage": "vitest run --coverage --passWithNoTests"
-},
+    "start": "node src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/belennmm/SDLC_AI_Shop502.git"
   },
   "keywords": [],
-  "author": "",
-  
-  "license": "ISC",
+  "author": "Shop 502 Team",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/belennmm/SDLC_AI_Shop502/issues"
   },
