@@ -4,14 +4,21 @@
   "description": "Proof of concept for an anonymous Shop 502 shopping cart TUI",
   "main": "src/index.js",
   "type": "module",
-  "directories": {
-    "test": "tests"
-  },
+  "bin": "src/index.js",
+
+  "pkg": {
+  "scripts": [
+    "src/**/*.js"
+  ]},
+
+  "directories": {"test": "tests"},
   "scripts": {
     "start": "node src/index.js",
     "test": "vitest run",
     "test:watch": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "build": "pkg src/index.js --targets node24-win-x64 --output dist/shop502-cart.exe"
+
   },
   "repository": {
     "type": "git",
@@ -26,6 +33,7 @@
   "homepage": "https://github.com/belennmm/SDLC_AI_Shop502#readme",
   "devDependencies": {
     "@vitest/coverage-v8": "^4.1.10",
+    "@yao-pkg/pkg": "^6.21.0",
     "vitest": "^4.1.10"
   }
 }
